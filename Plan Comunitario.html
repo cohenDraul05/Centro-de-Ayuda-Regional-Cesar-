@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Comunitario</title>
+  <link rel="stylesheet" href="css/styles_Plan Comunitario.css">
+</head>
+<body>
+
+  <!-- Header principal -->
+ <header class="main-header">
+  <h1>Centro de Ayuda</h1>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="index.html" class="dropbtn" id="inicioBtn">Inicio</a>
+          <div class="dropdown-content" id="menuDropdown">
+            <a href="index.html">Inicio</a>
+            <a href="plan comunitario.html">Plan comunitario</a>
+            <a href="Actividades.html">Actividades Comunitarias</a>
+            <a href="Historias.html">Historias de Cambio</a>
+            <a href="ABC.html">ABC del Componente Social y Comunitario</a>
+            <a href="Lideres.html">Red de Líderes</a>
+            <a href="guias.html">Guias y Materiales de Apoyo</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de bienvenida -->
+  <section class="intro">
+    <h2>Plan Comunitario</h2>
+  </section>
+
+    <!-- Sección de introducción -->
+  <section class = "intro2">
+    <p>Acá encontrarás las presentaciones para trabajar el momento 1 y 2 de los encuentros, 
+      así como el Formulario 1 Plan Comunitario. Descárgalos y compártelos con la comunidad en estos espacios.</p>  
+    </section>
+
+  <!-- Sección de presentaciones -->
+  <section class="presentaciones">
+    <h3>1. Presentación Plan Comunitarios</h3>
+    <div class="documento">
+      <iframe src="docs\Presentacion_Plan_Comunitario.pdf" width="100%" height="400px"></iframe>
+    </div>
+
+    <h3>2. Guias del Plan Comunitario!</h3>
+    <div class="documento">
+      <iframe src="docs\GUIA DEL PLAN COMUNITARIO .pdf" width="100%" height="400px"></iframe>
+    </div>
+  </section>
+
+  <!-- Sección de formatos -->
+<section class="formatos">
+  <h3>3. Formatos para el Plan Comunitario</h3>
+  <div class="formato-bloques">
+
+    <div class="formato-item">
+      <img src="assets/images/INFORME1.png" alt="Formato 1">
+      <p><strong>Formato #1</strong></p>
+      <a href="docs/Formato_1_Plan_Comunitario_1.pdf" target="_blank" class="btn-ver">
+        Accede aquí
+      </a>
+    </div>
+
+    <div class="formato-item">
+      <img src="assets/images/INFORME2.png" alt="Formato 2">
+      <p><strong>Formato #2</strong></p>
+      <a href="docs/Formato_2_Matriz.pdf" target="_blank" class="btn-ver">
+        Accede aquí
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Centro de Ayuda-Regional Cesar</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const inicioBtn = document.getElementById('inicioBtn');
+      const menuDropdown = document.getElementById('menuDropdown');
+
+      // Mostrar/ocultar el menú con clic
+      inicioBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // Evita navegación a index.html al hacer clic
+        menuDropdown.classList.toggle('show');
+      });
+
+      // Cerrar el menú si se hace clic fuera de él
+      document.addEventListener('click', function (event) {
+        if (!inicioBtn.contains(event.target) && !menuDropdown.contains(event.target)) {
+          menuDropdown.classList.remove('show');
+        }
+      });
+
+      // Opcional: cerrar el menú al hacer clic en alguna opción del menú
+      menuDropdown.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function () {
+          menuDropdown.classList.remove('show');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+

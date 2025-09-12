@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red de Líderes</title>
+    <link rel="stylesheet" href="css/styles_Lideres.css">
+</head>
+<body>
+    
+    <!-- Header principal -->
+     <header class="main-header">
+  <h1>Centro de Ayuda</h1>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="index.html" class="dropbtn" id="inicioBtn">Inicio</a>
+          <div class="dropdown-content" id="menuDropdown">
+            <a href="index.html">Inicio</a>
+            <a href="plan comunitario.html">Plan comunitario</a>
+            <a href="Actividades.html">Actividades Comunitarias</a>
+            <a href="Historias.html">Historias de Cambio</a>
+            <a href="ABC.html">ABC del Componente Social y Comunitario</a>
+            <a href="Lideres.html">Red de Líderes</a>
+            <a href="guias.html">Guias y Materiales de Apoyo</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <header class="sub-header">
+            <h2>Red de líderes</h2>
+        </header>
+
+        <section id="descripcion">
+            <p> ¿Listo para liderar? En Red LÍDERES, creemos que el liderazgo no se impone, se cultiva. 
+                A través de nuestra exclusiva colección de juegos y actividades, te invitamos a explorar, 
+                practicar y perfeccionar las cualidades que definen a un verdadero líder. Participa en desafíos 
+                estratégicos, resuelve dilemas de equipo y descubre tu potencial en un entorno lúdico y competitivo. 
+                ¡Aquí es donde los futuros líderes se forjan!</p>
+        </section> 
+
+        <section id="guias-apoyo">
+            <ul class="lista-guias">
+                <li><a href="docs/ELECCIÓN DE LIDERES.pdf" target="_blank">Eleccion de Lideres</a></li>
+                <li><a href="docs/14. Ayuda de memoria sobre liderazgo.pdf" target="_blank">Ayuda de Memoria Sobre Liderazgo</a></li>
+                <li><a href="docs/15.Orientaciones para el ejercicio de liderazgo.pdf" target="_blank">Orientacion para el ejercicio de liderazgo</a></li>
+                <!-- Más documentos aquí -->
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Centro de Ayuda-Regional Cesar</p>
+        </footer>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const inicioBtn = document.getElementById('inicioBtn');
+      const menuDropdown = document.getElementById('menuDropdown');
+
+      // Mostrar/ocultar el menú con clic
+      inicioBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // Evita navegación a index.html al hacer clic
+        menuDropdown.classList.toggle('show');
+      });
+
+      // Cerrar el menú si se hace clic fuera de él
+      document.addEventListener('click', function (event) {
+        if (!inicioBtn.contains(event.target) && !menuDropdown.contains(event.target)) {
+          menuDropdown.classList.remove('show');
+        }
+      });
+
+      // Opcional: cerrar el menú al hacer clic en alguna opción del menú
+      menuDropdown.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function () {
+          menuDropdown.classList.remove('show');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

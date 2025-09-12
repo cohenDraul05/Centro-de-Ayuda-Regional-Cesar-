@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividades Comunitarias</title>
+  <link rel="stylesheet" href="css/styles_Actividades.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header principal -->
+    <header class="main-header">
+        <h1>Centro de Ayuda</h1>
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="index.html" class="dropbtn" id="inicioBtn">Inicio</a>
+              <div class="dropdown-content" id="menuDropdown">
+                <a href="index.html">Inicio</a>
+                <a href="plan comunitario.html">Plan comunitario</a>
+                <a href="Actividades.html">Actividades Comunitarias</a>
+                <a href="Historias.html">Historias de Cambio</a>
+                <a href="ABC.html">ABC del Componente Social y Comunitario</a>
+                <a href="Lideres.html">Red de Líderes</a>
+                <a href="guias.html">Guias y Materiales de Apoyo</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Sección de bienvenida -->
+    <section class="intro">
+      <h2>Actividades Comunitarias</h2>
+    </section>
+
+    <!-- Sección de juegos -->
+      <section id="juegos">
+            <ul class="lista-juegos">
+                <li><a href="docs/La Telaraña.pdf" target="_blank">Juego: La Telaraña</a></li>
+                <li><a href="docs/Pasa la Pelota.pdf" target="_blank">Juego: Pasa la Pelota</a></li>
+                <li><a href="docs/El Termometro de Opiniones.pdf" target="_blank">Juego: El Termometro de Opiniones</a></li>
+                <li><a href="docs/Historias Encadenadas.pdf" target="_blank">Juego: Historias Encadenadas</a></li>
+                <!-- Más documentos aquí -->
+            </ul>
+        </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Centro de Ayuda-Regional Cesar</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Script para acordeón desplegable
+    const botones = document.querySelectorAll(".acordeon-btn");
+    botones.forEach(boton => {
+      boton.addEventListener("click", () => {
+        boton.classList.toggle("activo");
+
+        let contenido = boton.nextElementSibling;
+        if (contenido.style.maxHeight) {
+          contenido.style.maxHeight = null;
+        } else {
+          contenido.style.maxHeight = contenido.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const inicioBtn = document.getElementById('inicioBtn');
+      const menuDropdown = document.getElementById('menuDropdown');
+
+      // Mostrar/ocultar el menú con clic
+      inicioBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // Evita navegación a index.html al hacer clic
+        menuDropdown.classList.toggle('show');
+      });
+
+      // Cerrar el menú si se hace clic fuera de él
+      document.addEventListener('click', function (event) {
+        if (!inicioBtn.contains(event.target) && !menuDropdown.contains(event.target)) {
+          menuDropdown.classList.remove('show');
+        }
+      });
+
+      // Opcional: cerrar el menú al hacer clic en alguna opción del menú
+      menuDropdown.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function () {
+          menuDropdown.classList.remove('show');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

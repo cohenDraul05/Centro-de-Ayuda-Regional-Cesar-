@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guías y Material de Apoyo</title>
+    <link rel="stylesheet" href="css/styles_guias.css">
+</head>
+<body>
+    
+    <!-- Header principal -->
+        <header class="main-header">
+            <h1>Centro de Ayuda</h1>
+                <nav>
+                <ul>
+                    <li class="dropdown">
+                    <a href="index.html" class="dropbtn" id="inicioBtn">Inicio</a>
+                    <div class="dropdown-content" id="menuDropdown">
+                        <a href="index.html">Inicio</a>
+                        <a href="plan comunitario.html">Plan comunitario</a>
+                        <a href="Actividades.html">Actividades Comunitarias</a>
+                        <a href="Historias.html">Historias de Cambio</a>
+                        <a href="ABC.html">ABC del Componente Social y Comunitario</a>
+                        <a href="Lideres.html">Red de Líderes</a>
+                        <a href="guias.html">Guias y Materiales de Apoyo</a>
+                    </div>
+                    </li>
+                </ul>
+                </nav>
+            </header>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <header class="sub-header">
+            <h2>Guías y Material de Apoyo</h2>
+        </header>
+
+        <section id="guias-apoyo">
+            <ul class="lista-guias">
+                <li><a href="docs/GUIA DE ENCUENTROS.pdf" target="_blank">Guía de Encuentros Comunitarios</a></li>
+                <li><a href="docs/guia2.pdf" target="_blank">Guía 2: Procedimientos Básicos</a></li>
+                <li><a href="docs/herramienta1.xlsx" target="_blank">Herramienta 1: Formato de Registro</a></li>
+                <!-- Más documentos aquí -->
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Centro de Ayuda-Regional Cesar</p>
+        </footer>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const inicioBtn = document.getElementById('inicioBtn');
+      const menuDropdown = document.getElementById('menuDropdown');
+
+      // Mostrar/ocultar el menú con clic
+      inicioBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // Evita navegación a index.html al hacer clic
+        menuDropdown.classList.toggle('show');
+      });
+
+      // Cerrar el menú si se hace clic fuera de él
+      document.addEventListener('click', function (event) {
+        if (!inicioBtn.contains(event.target) && !menuDropdown.contains(event.target)) {
+          menuDropdown.classList.remove('show');
+        }
+      });
+
+      // Opcional: cerrar el menú al hacer clic en alguna opción del menú
+      menuDropdown.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function () {
+          menuDropdown.classList.remove('show');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

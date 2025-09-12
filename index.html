@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Centro de Ayudas regional Cesar</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header principal -->
+    <header id="main-header">
+    <div class="header-fixed">
+        <div class="header-left">
+            <h1>Centro de Ayudas</h1>
+        </div>
+        <div class="header-right">
+            <form class="search-form" autocomplete="off">
+                <button type="button" id="search-toggle">
+                    <svg width="18" height="18" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" stroke="#333" stroke-width="2" fill="none"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="#333" stroke-width="2"/>
+                        </svg>
+                </button>
+                <input type="text" id="search-input" placeholder="Buscar..." style="display:none;">
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header-center">
+                <nav>
+                    <ul>
+                        <li class="dropdown">
+                            <button class="dropbtn">Inicio</button>
+                            <div class="dropdown-content">
+                                <a href="#Panel de Anuncios">Panel Informativo</a>
+                                <a href="#actividades-especiales">Actividades</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <h4>Prosperidad Social Regional Cesar<br> 
+                    Trabajando por tu Bienestar</h4>
+            </div>
+    </div>
+    </header>
+    
+    <!-- Introduccion-->
+    <section id="Introduccion">
+        <h3>¿Cómo podemos ayudarte hoy?</h3>
+        <p>En Prosperidad Social Regional Cesar trabajamos para estar más cerca de las personas y sus necesidades. Este espacio ha sido creado como un centro de ayuda donde podrás encontrar información clara, orientación oportuna y herramientas prácticas para acceder a nuestros programas, servicios y beneficios. Nuestro propósito es acompañar a las comunidades de la región en sus procesos de inclusión social y superación de la pobreza, brindando respuestas ágiles y confiables. Aquí encontrarás un canal de apoyo pensado para ti, porque creemos que juntos podemos construir un futuro con mayores oportunidades y bienestar para todos.</p>
+    </section>
+
+
+<!-- ================
+    Panel de Anuncios 
+    ==================-->
+
+<section id="Panel de Anuncios">
+    <div class="container panel-anuncios">
+        <div class="carta">
+            <img src="assets/images/Plan Comunitario.png" alt="Plan Comunitario">
+            <button onclick="location.href='Plan Comunitario.html'">Plan Comunitario</button>
+        </div>
+        <div class="carta">
+            <img src="assets/images/Actividades Comunitarias.png" alt="Actividades Comunitarias">
+            <button onclick="location.href='Actividades.html'">Actividades Comunitarias</button>
+        </div>
+        <div class="carta">
+            <img src="assets/images/Historias de Cambio.png" alt="Historias de Cambio">
+            <button onclick="location.href='Historias.html'"> Historias de Cambio </button>
+        </div>
+        <div class="carta">
+            <img src="assets/images/ABC.png" alt="ABC del Componente Social y Comunitario">
+            <button onclick="location.href='ABC.html'"> ABC del Componente Social y Comunitario</button>
+        </div>
+        <div class="carta">
+            <img src="assets/images/Red de Líderes y Voluntariado.png" alt="Red de Líderes y Voluntariado">
+            <button onclick="location.href='Lideres.html'"> Red de Lideres</button>
+        </div>
+        <div class="carta">
+            <img src="assets/images/Guías y Material de Apoyo.png" alt="Guías y Material de Apoyo">
+            <button onclick="location.href='guias.html'">Guías y Material de Apoyo</button>
+        </div>
+    </div>   
+</section>
+
+
+
+<!-- ==========================
+   Actividades Especiales 
+========================== */-->
+
+<section id="actividades-especiales">
+    <h2>Destacados</h2>
+    <div class="sliders-grid">
+        <!-- Slider 1 ENCUENTROS -->
+        <div class="slider-container">
+            <h5>Encuentros Comunitarios</h5>
+            <button class="slider-btn prev">&#10094;</button> 
+            <div class="slider">
+                <div class="slide active">
+                    <img src="assets/images/encuentroAC_1.jpg" alt="Encuentro Comunitario">
+                    <p class="slide-caption">Encuentro Comunitario(Agustin Codazzi)</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/encuentroAC_2.jpg" alt="Encuentro Comunitario">
+                    <p class="slide-caption">Encuentro Comunitario(Agustin Codazzi)</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/encuentroAC_3.jpg" alt="Encuentro Comunitario">
+                    <p class="slide-caption">Encuentro Comunitario(Agustin Codazzi)</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/encuentroAC_4.jpg" alt="Encuentro Comunitario">
+                    <p class="slide-caption">Encuentro Comunitario(Agustin Codazzi)</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/encuentroAC_5.jpg" alt="Encuentro Comunitario">
+                    <p class="slide-caption">Encuentro Comunitario(Agustin Codazzi)</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/encuentroAC_6.jpg" alt="Encuentro Comunitario">
+                    <p class="slide-caption">Encuentro Comunitario(Agustin Codazzi)</p>
+                </div>
+            </div>
+            <button class="slider-btn next">&#10095;</button>
+            <div class="slider-dots"></div>
+        </div>
+        <!-- Slider 2 Ofertas -->
+        <div class="slider-container">
+            <h5>Ofertas</h5>
+            <button class="slider-btn prev">&#10094;</button>
+            <div class="slider">
+                <div class="slide active">
+                    <img src="assets/images/ofertaM_1.jpg" alt="Oferta Manaure">
+                    <p class="slide-caption">Oferta Manaure</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/ofertaM_2.jpg" alt="Oferta Manaure">
+                    <p class="slide-caption">Oferta Manaure</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/ofertaM_3.jpg" alt="Oferta Manaure">
+                    <p class="slide-caption">Oferta Manaure</p>
+                </div>
+                 <div class="slide active">
+                    <img src="assets/images/ofertaM_4.jpg" alt="Oferta Manaure">
+                    <p class="slide-caption">Oferta Manaure</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/ofertaM_5.jpg" alt="Oferta Manaure">
+                    <p class="slide-caption">Oferta Manaure</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/ofertaM_6.jpg" alt="Oferta Manaure">
+                    <p class="slide-caption">Oferta Manaure</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/ofertaM_7.jpg" alt="Oferta Manaure">
+                    <p class="slide-caption">Oferta Manaure</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/ofertaM_8.jpg" alt="Oferta Manaure">
+                    <p class="slide-caption">Oferta Manaure</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/ofertaM_9.jpg" alt="Oferta Manaure">
+                    <p class="slide-caption">Oferta Manaure</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/ofertaEP_1.jpg" alt="Oferta El Paso">
+                    <p class="slide-caption">Oferta El Paso</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/ofertaEP_2.jpg" alt="Oferta El Paso">
+                    <p class="slide-caption">Oferta El Paso</p>
+                </div>
+                 <div class="slide active">
+                    <img src="assets/images/ofertaEP_3.jpg" alt="Oferta El Paso">
+                    <p class="slide-caption">Oferta El Paso</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/ofertaEP_4.jpg" alt="Oferta El Paso">
+                    <p class="slide-caption">Oferta El Paso</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/ofertaEP_5.jpg" alt="Oferta El Paso">
+                    <p class="slide-caption">Oferta El Paso</p>
+                </div>
+                 <div class="slide active">
+                    <img src="assets/images/ofertaEP_6.jpg" alt="Oferta El Paso">
+                    <p class="slide-caption">Oferta El Paso</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/ofertaEP_7.jpg" alt="Oferta El Paso">
+                    <p class="slide-caption">Oferta El Paso</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/ofertaEP_8.jpg" alt="Oferta El Paso">
+                    <p class="slide-caption">Oferta El Paso</p>
+                </div>
+            </div>
+            <button class="slider-btn next">&#10095;</button>
+            <div class="slider-dots"></div>
+        </div>
+        <!-- Slider 3 -->
+        <div class="slider-container">
+            <h5>Plan Comunitario</h5>
+            <button class="slider-btn prev">&#10094;</button>
+            <div class="slider">
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioG_1.jpg" alt="Plan Comunitario Gamarra">
+                    <p class="slide-caption">Plan Comunitario Gamarra</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioG_2.jpg" alt="Plan Comunitario Gamarra">
+                    <p class="slide-caption">Plan Comunitario Gamarra</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioG_3.jpg" alt="Plan Comunitario Gamarra">
+                    <p class="slide-caption">Plan Comunitario Gamarra</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioG_4.jpg" alt="Plan Comunitario Gamarra">
+                    <p class="slide-caption">Plan Comunitario Gamarra</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioG_5.jpg" alt="Plan Comunitario Gamarra">
+                    <p class="slide-caption">Plan Comunitario Gamarra</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioG_6.jpg" alt="Plan Comunitario Gamarra">
+                    <p class="slide-caption">Plan Comunitario Gamarra</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioG_7.jpg" alt="Plan Comunitario Gamarra">
+                    <p class="slide-caption">Plan Comunitario Gamarra</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioG_8.jpg" alt="Plan Comunitario Gamarra">
+                    <p class="slide-caption">Plan Comunitario Gamarra</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioLG_1.jpg" alt="Plan Comunitario La Gloria">
+                    <p class="slide-caption">Plan Comunitario La Gloria</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioLG_2.jpg" alt="Plan Comunitario La Gloria">
+                    <p class="slide-caption">Plan Comunitario La Gloria</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioLG_3.jpg" alt="Plan Comunitario La Gloria">
+                    <p class="slide-caption">Plan Comunitario La Gloria</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioLG_4.jpg" alt="Plan Comunitario La Gloria">
+                    <p class="slide-caption">Plan Comunitario La Gloria</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/plancomunitarioLG_5.jpg" alt="Plan Comunitario La Gloria">
+                    <p class="slide-caption">Plan Comunitario La Gloria</p>
+                </div>
+            </div>
+            <button class="slider-btn next">&#10095;</button>
+            <div class="slider-dots"></div>
+        </div>
+        <!-- Slider 4 -->
+        <div class="slider-container">
+            <h5>Ferias</h5>
+            <button class="slider-btn prev">&#10094;</button>
+            <div class="slider">
+                <div class="slide active">
+                    <img src="assets/images/feriachimi_1.jpg" alt="Feria Chimichagua">
+                    <p class="slide-caption">Feria Chimichagua</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/feriachimi_2.jpg" alt="Feria Chimichagua">
+                    <p class="slide-caption">Feria Chimichagua</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/feriachimi_3.jpg" alt="Feria Chimichagua">
+                    <p class="slide-caption">Feria Chimichagua</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/feriachimi_4.jpg" alt="Feria Chimichagua">
+                    <p class="slide-caption">Feria Chimichagua</p>
+                </div>
+                <div class="slide active">
+                    <img src="assets/images/feriachimi_5.jpg" alt="Feria Chimichagua">
+                    <p class="slide-caption">Feria Chimichagua</p>
+                </div>
+            </div>
+            <button class="slider-btn next">&#10095;</button>
+            <div class="slider-dots"></div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Centro de ayuda-Regional Cesar</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // ----------------------------
+    // Menú desplegable
+    // ----------------------------
+    const dropbtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    dropbtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    });
+    document.addEventListener('click', function() {
+        dropdownContent.style.display = 'none';
+    });
+
+    // ----------------------------
+    // Buscador animado
+    // ----------------------------
+    const searchToggle = document.getElementById('search-toggle');
+    const searchInput = document.getElementById('search-input');
+
+    searchToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        searchInput.classList.toggle('active');
+        if (searchInput.classList.contains('active')) {
+            searchInput.style.display = 'block';
+            searchInput.focus();
+        } else {
+            searchInput.style.display = 'none';
+        }
+    });
+
+    // Oculta el input si se hace clic fuera
+    document.addEventListener('click', function(e) {
+        if (!searchToggle.contains(e.target) && !searchInput.contains(e.target)) {
+            searchInput.classList.remove('active');
+            searchInput.style.display = 'none';
+        }
+    });
+
+    // ----------------------------
+    // Lógica de navegación del buscador
+    // ----------------------------
+    searchInput.addEventListener('keypress', function(e) {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            let query = this.value.toLowerCase().trim();
+
+            // Diccionario de búsqueda
+            const pages = {
+                "inicio": "index.html",
+                "Componente": "ABC.html",
+                "abc": "ABC.html",
+                "ABC": "ABC.html",
+                "actividades": "Actividades.html",
+                "guías": "guias.html",
+                "guias": "guias.html",
+                "historias": "Historias.html",
+                "líderes": "Lideres.html",
+                "lideres": "Lideres.html",
+                "plan comunitario": "Plan Comunitario.html",
+                "plan": "Plan Comunitario.html"
+
+            };
+
+            // Buscar coincidencia exacta
+            if (pages[query]) {
+                window.location.href = pages[query];
+            } else {
+                alert("No se encontró la sección: " + this.value);
+            }
+        }
+    });
+});
+</script>
+
+
+   <script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.slider-container').forEach(function(container) {
+        const slides = Array.from(container.querySelectorAll('.slide'));
+        const prevBtn = container.querySelector('.slider-btn.prev');
+        const nextBtn = container.querySelector('.slider-btn.next');
+        const dotsContainer = container.querySelector('.slider-dots');
+        let current = 0;
+
+        // Limpiar y crear dots
+        dotsContainer.innerHTML = '';
+        slides.forEach((_, i) => {
+            const dot = document.createElement('span');
+            dot.classList.add('slider-dot');
+            dot.addEventListener('click', () => {
+                current = i;
+                showSlide();
+            });
+            dotsContainer.appendChild(dot);
+        });
+        const dots = Array.from(dotsContainer.querySelectorAll('.slider-dot'));
+
+        function showSlide() {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === current);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === current);
+            });
+        }
+
+        prevBtn.addEventListener('click', function() {
+            current = (current - 1 + slides.length) % slides.length;
+            showSlide();
+        });
+
+        nextBtn.addEventListener('click', function() {
+            current = (current + 1) % slides.length;
+            showSlide();
+        });
+
+        // Inicializar
+        showSlide();
+    });
+});
+</script>
+</body>
+</html>
