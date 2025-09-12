@@ -1,0 +1,219 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Container general */
+section {
+  max-width: 4000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Header */
+.main-header {
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-header h1 {
+  font-size: 1.3em;
+}
+
+.main-header nav ul {
+  list-style: none;
+}
+
+.main-header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.main-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.main-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.dropbtn {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #050505;
+  min-width: 210px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown when .show is added */
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #070707;
+}
+
+/* Opcional: cierra el menú en pantallas pequeñas si quieres */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+  }
+  .dropdown-content {
+    position: static;
+    min-width: 100%;
+    box-shadow: none;
+  }
+}
+
+/* Intro */
+.intro {
+  background-image: url('../assets/images/Plan_Co.png');
+  background-size: cover;
+  background-position: center;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  height: 380px;
+  padding: 30px 40px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  padding: 140px;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.intro2 {
+  background: #f8e432;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 5px;
+  color: black;;
+  
+}
+
+
+/* Presentaciones */
+.presentaciones h3 {
+  font-size: 1.3em;
+  margin: 25px 0 15px;
+  color: #111;
+  margin-top: -15px;
+}
+
+.documento {
+  background: #face3c;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  margin-bottom: 40px;
+}
+
+/* Formatos */
+.formatos {
+  background: #f8e432;
+  border-radius: 8px;
+  padding: 20px 10px;
+}
+
+.formatos h3 {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+
+.formato-bloques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.formato-item {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.formato-item img {
+  max-width: 80%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.formato-item p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* Botón ver documento */
+.btn-ver {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-ver:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  border-radius: 8px 8px 0 0;
+}

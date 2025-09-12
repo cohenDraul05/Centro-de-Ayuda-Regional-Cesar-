@@ -1,0 +1,189 @@
+/* ==========================
+   Reset y base
+========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: #ffea2b;
+  color: #333;
+}
+
+/* ==========================
+   Container
+========================== */
+.container {
+  max-width: 4000px;
+  margin: 0 auto;
+}
+
+/* ==========================
+   Header
+========================== */
+.main-header {
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-header h1 {
+  font-size: 1.3em;
+}
+
+.main-header nav ul {
+  list-style: none;
+}
+
+.main-header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+.main-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.main-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.dropbtn {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #050505;
+  min-width: 210px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown when .show is added */
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #070707;
+}
+
+/* Opcional: cierra el menú en pantallas pequeñas si quieres */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+  }
+  .dropdown-content {
+    position: static;
+    min-width: 100%;
+    box-shadow: none;
+  }
+}
+
+/* ==========================
+   Intro
+========================== */
+.intro {
+  background-image: url('../assets/images/Actividades.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 0 auto;
+  height: 300px;
+
+}
+
+.intro h2 {
+  padding: 100px;
+  color: black;
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+
+/* ==========================
+   Juegos
+========================== */
+#juegos {
+  margin-bottom: 10px;
+}
+
+.lista-juegos {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px;
+}
+
+.lista-juegos li {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lista-juegos li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.lista-juegos a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #111;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+
+.lista-juegos a:hover {
+  color: #d4a017;
+}
+
+
+
+/* ==========================
+   Footer
+========================== */
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  border-radius: 8px 8px 0 0;
+}
